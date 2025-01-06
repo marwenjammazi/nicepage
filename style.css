@@ -1,8 +1,17 @@
 body {
   padding: 0px;
   margin: 0px;
-  background-image: url(gayy.png);
+
   background-size: cover;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  background-image: url(gayy.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+  height: calc(100vh - 305px);
 }
 header {
   display: flex;
@@ -29,7 +38,7 @@ li {
 }
 nav {
   display: flex;
-  justify-content: space-evenly;
+  gap: 20px;
   padding: 10px;
   background-color: aliceblue;
 }
@@ -106,6 +115,7 @@ nav a:hover {
   justify-content: space-evenly;
   align-items: center;
   align-content: center;
+  margin: 30px;
 }
 .pics img {
   width: 100px;
@@ -118,13 +128,6 @@ nav a:hover {
   color: whitesmoke;
 
   box-shadow: 2px 2px 4px #00000098;
-}
-div {
-  justify-content: center;
-  align-items: center;
-  margin: 30px;
-  color: whitesmoke;
-  text-shadow: 2px 2px 4px #000000;
 }
 .textt h3 {
   display: flex;
@@ -145,6 +148,12 @@ div.textt {
   background-image: none;
   padding-left: 50px;
   padding-right: 50px;
+}
+.head2 {
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+  gap: 300px;
 }
 
 @media (max-width: 1024px) {
